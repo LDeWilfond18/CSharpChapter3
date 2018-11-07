@@ -52,5 +52,29 @@ namespace GUIcalculator
             mult = num1 * num2;
             lblResultMult.Text = "The product is " + mult;
         }
+
+        private void buttonDiv_Click(object sender, EventArgs e)
+        {
+            int num1;
+            int num2;
+            int Div;
+            num1 = Convert.ToInt32(txtinputnumber.Text);
+            num2 = Convert.ToInt32(txtinputnumber2.Text);
+
+            Div = num1 / num2;
+            lblResultDiv.Text = "The quotient is " + Div;
+        }
+
+        private void btnMod_Click(object sender, EventArgs e)
+        {
+            int num1;
+            int num2;
+            int mod;
+            num1 = Convert.ToInt32(txtinputnumber.Text);
+            num2 = Convert.ToInt32(txtinputnumber2.Text);
+
+            mod = num1 % num2;
+            lblMod.Text = "The answer is " + mod;
+        }
     }
 }

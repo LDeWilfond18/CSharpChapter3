@@ -39,6 +39,9 @@
             this.buttonMult = new System.Windows.Forms.Button();
             this.lblResultMult = new System.Windows.Forms.Label();
             this.buttonDiv = new System.Windows.Forms.Button();
+            this.lblResultDiv = new System.Windows.Forms.Label();
+            this.btnMod = new System.Windows.Forms.Button();
+            this.lblMod = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -145,12 +148,44 @@
             this.buttonDiv.TabIndex = 10;
             this.buttonDiv.Text = "Divide";
             this.buttonDiv.UseVisualStyleBackColor = true;
+            this.buttonDiv.Click += new System.EventHandler(this.buttonDiv_Click);
+            // 
+            // lblResultDiv
+            // 
+            this.lblResultDiv.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblResultDiv.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.lblResultDiv.Location = new System.Drawing.Point(638, 199);
+            this.lblResultDiv.Name = "lblResultDiv";
+            this.lblResultDiv.Size = new System.Drawing.Size(102, 31);
+            this.lblResultDiv.TabIndex = 11;
+            // 
+            // btnMod
+            // 
+            this.btnMod.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.btnMod.Location = new System.Drawing.Point(37, 262);
+            this.btnMod.Name = "btnMod";
+            this.btnMod.Size = new System.Drawing.Size(96, 31);
+            this.btnMod.TabIndex = 12;
+            this.btnMod.Text = "Modulus";
+            this.btnMod.UseVisualStyleBackColor = true;
+            this.btnMod.Click += new System.EventHandler(this.btnMod_Click);
+            // 
+            // lblMod
+            // 
+            this.lblMod.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblMod.Location = new System.Drawing.Point(244, 262);
+            this.lblMod.Name = "lblMod";
+            this.lblMod.Size = new System.Drawing.Size(100, 31);
+            this.lblMod.TabIndex = 13;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(795, 457);
+            this.Controls.Add(this.lblMod);
+            this.Controls.Add(this.btnMod);
+            this.Controls.Add(this.lblResultDiv);
             this.Controls.Add(this.buttonDiv);
             this.Controls.Add(this.lblResultMult);
             this.Controls.Add(this.buttonMult);
@@ -182,6 +217,9 @@
         private System.Windows.Forms.Button buttonMult;
         private System.Windows.Forms.Label lblResultMult;
         private System.Windows.Forms.Button buttonDiv;
+        private System.Windows.Forms.Label lblResultDiv;
+        private System.Windows.Forms.Button btnMod;
+        private System.Windows.Forms.Label lblMod;
     }
 }
 
