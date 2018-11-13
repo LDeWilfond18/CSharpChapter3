@@ -26,7 +26,7 @@ namespace ProjectedRaisesGUI
 
             newSalary = raise * salary;
 
-            lblNewSalary.Text = "The new salary is " + newSalary;
+            lblNewSalary.Text = "The new salary is $" + newSalary;
         }
     }
 }
