@@ -35,6 +35,7 @@
             this.txtChick3 = new System.Windows.Forms.TextBox();
             this.lblEnterEggs = new System.Windows.Forms.Label();
             this.btnCalculateEggs = new System.Windows.Forms.Button();
+            this.lblOutput = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txtChick1
@@ -93,11 +94,20 @@
             this.btnCalculateEggs.UseVisualStyleBackColor = true;
             this.btnCalculateEggs.Click += new System.EventHandler(this.btnCalculateEggs_Click);
             // 
+            // lblOutput
+            // 
+            this.lblOutput.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblOutput.Location = new System.Drawing.Point(283, 288);
+            this.lblOutput.Name = "lblOutput";
+            this.lblOutput.Size = new System.Drawing.Size(194, 29);
+            this.lblOutput.TabIndex = 7;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblOutput);
             this.Controls.Add(this.btnCalculateEggs);
             this.Controls.Add(this.lblEnterEggs);
             this.Controls.Add(this.txtChick3);
@@ -121,6 +131,7 @@
         private System.Windows.Forms.TextBox txtChick3;
         private System.Windows.Forms.Label lblEnterEggs;
         private System.Windows.Forms.Button btnCalculateEggs;
+        private System.Windows.Forms.Label lblOutput;
     }
 }
 
