@@ -35,12 +35,12 @@ namespace Madlibs
             bodyPartPlural = txtBodyPart.Text;
             noun = txtNoun.Text;
             nounPlural = txtNounPlural.Text;
-            num1 = Convert.ToInt32(txtNum1);
-            num2 = Convert.ToInt32(txtNum2);
+            num1 = Convert.ToInt32(txtNum1.Text);
+            num2 = Convert.ToInt32(txtNum2.Text);
 
             num3 = num1 + num2;
 
-            lblOutput.Text = "The " + color + " Dragon is the " + wordEndEst + " Dragon of all.It has " + num3 + " " + bodyPartPlural + " and a " + animal + " shaped like a " + noun + ". It loves to eat(plural noun), although it will feast on nearly anything."
+            lblOutput.Text = "The " + color + " Dragon is the " + wordEndEst + " Dragon of all.It has " + num3 + " " + bodyPartPlural + " and a " + animal + " shaped like a " + noun + ". It loves to eat " + nounPlural + ", although it will feast on nearly anything.";
         }
     }
 }
