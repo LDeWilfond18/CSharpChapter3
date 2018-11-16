@@ -18,12 +18,12 @@ namespace FixedDebugThree2
 
         private void helloButton_Click(object sender, EventArgs e)
         {
-            outputLabel = "Goodbye, " + textBox1.Text + "!";
+            outputLabel.Text = "Hello, " + textBox1.Text + "!";
         }
 
         private void goodbyeButton_Click(object sender, EventArgs e)
         {
-            outputLabel = "Goodbye, " + textBox1.Text + "!";
+            outputLabel.Text = "Goodbye, " + textBox1.Text + "!";
         }
     }
 }

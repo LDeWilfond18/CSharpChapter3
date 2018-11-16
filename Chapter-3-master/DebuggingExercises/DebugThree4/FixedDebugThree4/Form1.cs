@@ -20,9 +20,10 @@ namespace FixedDebugThree4
         {
             int birth;
             int year;
+            int age;
             birth = Convert.ToInt32(textBox1.Text);
             year = Convert.ToInt32(textBox2.Text);
-            age = year + birth
+            age = year - birth;
             outputLabel.Text = String.Format("On your birthday this year, \nyou were or will be " +
                 "{0} years old", age);
         }
